@@ -1,14 +1,15 @@
-/* Importa a fonte Chakra Petch do Google Fonts */
+/* Importa a fonte Dancing Script e Chakra Petch do Google Fonts */
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
 
 /* Estiliza o corpo da página */
 body {
-    font-family: "Chakra Petch", sans-serif; /* Define a fonte padrão */
+    font-family: "Chakra Petch", Arial; /* Define a fonte padrão */
     background-color: #DDDDDD; /* Cor de fundo da página */
     background-image: url('descida-do-espirito-santo-lateral.jpg'); /* Imagem de fundo da página */
     background-repeat: no-repeat; /* Não Repetir a imagem */
-  background-size: cover; /* Esticar a imagem */
-  background-position: center; /* Centralizar a Imagem */
+    background-size: cover; /* Esticar a imagem */
+    background-position: center; /* Centralizar a Imagem */
     display: flex; /* Usa Flexbox para layout */
     flex-direction: column; /* Alinha os itens na vertical */
     align-items: center; /* Centraliza os itens horizontalmente */
@@ -20,12 +21,29 @@ body {
 
 /* Estiliza os títulos h1 */
 h1 {
+    font-family: "Dancing Script", Arial; /* Define a fonte padrão */
     font-size: 3.5rem; /* Tamanho da fonte */
-    color: #060707; /* Cor do texto */
+    color: #6482e6; /* Cor do texto */
     text-align: center; /* Alinha o texto ao centro */
     letter-spacing: 0.4rem; /* Espaçamento entre letras */
-    -webkit-text-stroke-color: #f50c0c; /*inclui contorno no texto */
-    -webkit-text-stroke-width: 2px; /*define a lautra do contorno */
+    -webkit-text-stroke-color: #080606; /*inclui contorno no texto */
+    -webkit-text-stroke-width: 1px; /*define a lautra do contorno */
+}
+
+/* Estiliza os títulos h2 */
+h2 {
+    font-family: "Arial"; /* Define a fonte padrão */
+    font-size: 1.5rem; /* Tamanho da fonte */
+    color: #000251; /* Cor do texto */
+    text-align: center; /* Alinha o texto ao centro */
+    letter-spacing: 0.4rem; /* Espaçamento entre letras */
+    -webkit-text-stroke-color: #0a0202; /*inclui contorno no texto */
+    -webkit-text-stroke-width: 0.5px; /*define a lautra do contorno */
+    background: #9bf4f7; /* Cor de fundo dos itens */
+    border-radius: 1rem; /* Borda arredondada */
+    padding: 0.2rem; /* Espaçamento interno */
+    margin-bottom: 0.5rem; /* Espaçamento abaixo dos itens */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra leve */
 }
 
 /* Estiliza as seções da página */
@@ -53,15 +71,15 @@ section button {
     padding: 0.8rem 1.2rem; /* Espaçamento interno do botão */
     border: none; /* Remove a borda padrão */
     border-radius: 1.5rem; /* Borda arredondada */
-    background-color: #30475E; /* Cor de fundo do botão */
-    color: #F5F7F8; /* Cor do texto do botão */
-    font-size: 1rem; /* Tamanho da fonte */
+    background-color: #61a7ec; /* Cor de fundo do botão */
+    color: #882d09; /* Cor do texto do botão */
+    font-size: 1.5rem; /* Tamanho da fonte */
     cursor: pointer; /* Muda o cursor para indicar que é clicável */
 }
 
 /* Adiciona efeito hover ao botão de pesquisa */
 section button:hover {
-    background-color: #30475E; /* Muda a cor de fundo ao passar o mouse */
+    background-color: #398a58; /* Muda a cor de fundo ao passar o mouse */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra mais intensa */
 }
 
@@ -87,7 +105,7 @@ section button:hover {
 /* Estiliza os títulos dentro dos itens de resultado */
 .item-resultado h2 {
     font-size: 1.5rem; /* Tamanho da fonte */
-    color: #222831; /* Cor do texto */
+    color: #f11c1c; /* Cor do texto */
 }
 
 /* Estiliza os links dentro dos itens de resultado */
@@ -114,9 +132,9 @@ footer {
     text-align: center; /* Alinha o texto ao centro */
     padding: 0; /* Espaçamento interno */
     width: 100%; /* Largura total da página */
-    position: absolute; /* Posiciona o rodapé */
+    position: fixed; /* Posiciona o rodapé */
     bottom: 0; /* Alinha ao fundo da página */
-    font-size: 1rem; /* Tamanho da fonte */
+    font-size: 0.8rem; /* Tamanho da fonte */
 }
 
 @media (max-width: 768px) {
@@ -167,6 +185,6 @@ footer {
     }
 
     footer {
-        font-size: 0.9rem; /* Tamanho da fonte do rodapé em telas pequenas */
+        font-size: 0.6rem; /* Tamanho da fonte do rodapé em telas pequenas */
     }
 }
