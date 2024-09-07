@@ -1,4 +1,4 @@
-## Apóstolos na Ponta dos Dedos: Um Buscador Descontraído
+## Apóstolos na Ponta dos Dedos: Um Buscador Descontraído - Imersão DEV com Google Gemini
 
 **O que faz essa aplicação?**
 
